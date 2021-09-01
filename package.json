@@ -9,14 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@types/jest": "^27.0.1",
+    "@types/react-dom": "^17.0.9",
+    "jest": "^27.1.0",
     "next": "11.1.2",
+    "next-page-tester": "^0.28.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "ts-jest": "^27.0.5"
   },
   "devDependencies": {
-    "@types/react": "17.0.19",
+    "@types/react": "^17.0.19",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
     "typescript": "4.4.2"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "preset": "ts-jest"
   }
 }
